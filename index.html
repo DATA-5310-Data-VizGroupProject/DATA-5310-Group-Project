@@ -1,45 +1,96 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Course Project</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DATA 5310 - Group Project</title>
+
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             font-family: Arial, sans-serif;
-            max-width: 900px;
-            margin: 50px auto;
+            max-width: 1200px;
+            margin: 40px auto;
             padding: 20px;
             line-height: 1.6;
-        }
-        h1 {
+            background-color: #f5f5f5;
             color: #333;
         }
-        a {
-            color: #2563eb;
-            text-decoration: none;
+
+        h1 {
+            color: #222;
+            text-align: center;
         }
-        a:hover {
-            text-decoration: underline;
+
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+
+        .notebook {
+            background: white;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        iframe {
+            width: 100%;
+            height: 1200px;
+            border: none;
+            background: white;
+        }
+
+        .section-title {
+            margin-top: 50px;
         }
     </style>
 </head>
+
 <body>
 
-    <h1>My Course Project</h1>
-    <p>Welcome! Below are our project notebooks.</p>
+    <h1>DATA 5310 - Group Project</h1>
+    <p style="text-align:center;">
+        Welcome to our Data Visualization Group Project.
+    </p>
 
     <h2>Individual Notebooks</h2>
-    <ul>
-        <li><a href="Homework_8/Cameron_EDA.html">Cameron's EDA</a></li>
-        <li><a href="Homework_8/Edwin_EDA_Data_Visualization.html">Edwin's EDA</a></li>
-        <li><a href="Homework_8/Jacob_EDA.html">Jacob's EDA</a></li>
-        <li><a href="Homework_8/Vincent_EDA.html">Vincent's EDA</a></li>
-    </ul>
 
-    <h2>Combined Visualizations</h2>
-    <ul>
-        <li><a href="visualizations.html">Final Visualizations</a></li>
-    </ul>
+    <div class="notebook">
+        <h3>Cameron's EDA</h3>
+        <iframe src="Homework_8/Cameron_EDA.html" loading="lazy"></iframe>
+    </div>
+
+    <div class="notebook">
+        <h3>Edwin's EDA</h3>
+        <iframe src="Homework_8/Edwin_EDA_Data_Visualization.html" loading="lazy"></iframe>
+    </div>
+
+    <div class="notebook">
+        <h3>Jacob's EDA</h3>
+        <iframe src="Homework_8/Jacob_EDA.html" loading="lazy"></iframe>
+    </div>
+
+    <div class="notebook">
+        <h3>Vincent's EDA</h3>
+        <iframe src="Homework_8/Vincent_EDA.html" loading="lazy"></iframe>
+    </div>
+
+
+    <h2 class="section-title">Combined Visualizations</h2>
+
+    <div class="notebook">
+        <h3>Final Group Visualizations</h3>
+        <iframe src="visualizations.html" loading="lazy"></iframe>
+    </div>
 
 </body>
 </html>
+
